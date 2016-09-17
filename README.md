@@ -11,10 +11,14 @@ Part I - CRUD Location Service [Requirement]
 
 The location service shall have the following REST endpoints to store and retrieve locations. All the data must be persisted into MongoDB. You may want to install MongoDB locally for development testing and use free MongoLab for submission. For Go application to MongoDB, you can use driver like mgo. If you don’t like mgo, feel free to use any Go MongoDB drivers.
 To lookup coordinates of a location, use Google Map Api.
+
+
+
 Example:
 Get coordinates of 1600 Amphitheatre Parkway, Mountain View, CA.
 http://maps.google.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=false
 Create New Location - POST        /locations
+
 Request:
 POST /locations
 {
